@@ -1,0 +1,76 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Courier New;
+  background: #c2c3c7;
+}
+
+header {
+  padding: 1em;
+  background-image: url('images/landscape.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  image-rendering: pixelated;
+}
+
+header h1 {
+  width: fit-content;
+  padding: 0.1em;
+  background: #ffa300;
+  font-size: 4em;
+}
+
+header h1 a, header h1 a:visited {
+  color: black;
+}
+
+h2 {
+  font-size: 1.4em;
+}
+
+section {
+  font-size: 2em;
+  color: #fff1e8;
+  background: #5f574f;
+  padding: 1em;
+}
+
+section date {
+  font-size: 0.8em;
+  font-style: italic;
+  vertical-align: baseline;
+}
+
+a {
+  color: #29adff;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #ff004d;
+}
+
+ul {
+  list-style: none;
+}
+
+footer {
+  margin: 1em;
+  font-size: 1.6em;
+  text-align: center;
+}
+
+
+tags {
+  font-size: 0.8em;
+}
+
+tags ul, tags ul li {
+  padding: 0;
+  display: inline
+}
+
+article {
+  padding: 1em;
+  line-height: 1.6em;
+}
