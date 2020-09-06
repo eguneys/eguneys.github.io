@@ -54,6 +54,11 @@ ul {
   list-style: none;
 }
 
+ul li:nth-child(even) {
+  background: #fff1e8;
+  color: black;
+}
+
 footer {
   margin: 1em;
   font-size: 1.6em;
