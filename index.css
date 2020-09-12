@@ -1,8 +1,8 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: Courier New;
   background: #c2c3c7;
+  font-family: 'Grandstander', cursive;
 }
 
 header {
@@ -11,9 +11,16 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   image-rendering: pixelated;
+  box-shadow: 0px 2px 1px 2px #1d2b53;
+  margin-bottom: 0.2em;
+  position: relative;
+  z-index: 1;
 }
 
 header h1 {
+  margin: auto;
+  line-height:1.2em;
+  border-radius: 8px;
   width: fit-content;
   padding: 0.1em;
   background: #ffa300;
@@ -21,7 +28,7 @@ header h1 {
 }
 
 header h1 a, header h1 a:visited {
-  color: black;
+  color: #1d2b53;
 }
 
 h2 {
@@ -29,6 +36,7 @@ h2 {
 }
 
 section {
+  border-radius: 20px;
   font-size: 2em;
   color: #fff1e8;
   background: #5f574f;
@@ -54,9 +62,15 @@ ul {
   list-style: none;
 }
 
+ul li {
+  padding: 0.5em;
+  border-radius: 8px;
+}
+
 ul li:nth-child(even) {
+  margin: 0.5em 0;
   background: #fff1e8;
-  color: black;
+  color: #1d2b53;
 }
 
 footer {
@@ -71,7 +85,7 @@ tags {
 }
 
 tags ul, tags ul li {
-  padding: 0;
+  padding: 0.2em;
   display: inline
 }
 
