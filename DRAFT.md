@@ -1,19 +1,9 @@
-### 
+### What happened to Coursera and Online Education "Mission"
 
-This will be where I compose stories, to be added into a page where it is displayed on the website.
+September 2020
 
-The stories will be in plain English and won't contain code.
+This is an inspiring ted talk on the philosophy of old Coursera: https://www.ted.com/talks/daphne_koller_what_we_re_learning_from_online_education?utm_source=tedcomshare&utm_medium=social&utm_campaign=tedspread. I took a lot of precious valuable courses from old Coursera. Ranging from, Food and Nutrition, Brief History of Humankind, Constitution, Resilient, Beginners Guide to Irrational Behaviour, Property Law, to Computer Networking, Startup Engineering, Cryptography, Databases, Software Security, Computer Hardware, Matrices and Linear Algebra with Python, Compiler, Functional Programming with Scala, and some more I can't remember. And it's not just about video lectures, but the community, real time schedules, assignments and quizzes were all part of it. It sucks to shut it down and remove all of these amazing courses. I dropped out of college and resent this occasionally. World needs this service, especially in these pandemic times more than ever. I hope we will get it back some day.
 
-
-### Template
-
-    ### Header
-
-    Date
-
-    Tags
-
-    Body
 
 ### 1-Bit Weekend Jam Entry
 
@@ -31,3 +21,20 @@ I submitted my platformer to js13k. Looking for new ideas, I stumbled upon a vid
     #js13k #gamedev #pixelart #platformer #puzzle #javascript
 
 I was studying Celeste PICO-8 source code, then It was time for Js13kGames. I had to make a platformer, but I had another idea of a puzzle game I wanted to make. So in 4 days, I made a sliding puzzle game with no respect to the theme. So I gave it a name resembling 404, A0A. I quickly submitted and got a few likes and retweets on twitter. This was the first game I used my own made pixel art. Then I started the platformer game. This time I wanted to use the theme, so after some brainstorming I ended up using the digits of HTTP status codes to be the collectibles in the game. 24 days was left to deadline, so I made a plan for 20 days. Day 1, draw some placeholder art. Day 2, code the mechanics and so on. I didn't have to ...
+
+### 
+
+This will be where I compose stories, to be added into a page where it is displayed on the website.
+
+The stories will be in plain English and won't contain code.
+
+
+### Template
+
+    ### Header
+
+    Date
+
+    Tags
+
+    Body
