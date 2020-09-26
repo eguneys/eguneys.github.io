@@ -5,7 +5,7 @@
     <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="index.css">
 
-    <link href="https://fonts.googleapis.com/css2?family=Grandstander&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander&family=Lato&display=swap" rel="stylesheet">
 
   </head>
   <body>
@@ -13,7 +13,7 @@
   <h1> <a href='/'> Making Games </a> </h1>
 </header>
     <section>
-      <a href="#">Js13kGames 2020 Entry</a>
+      <a href="#">Coler 2D Platformer postmortem js13k 2020</a>
       <br/>
       <date>September 2020
 </date>
@@ -32,9 +32,58 @@
       </tags>
 
       <article>
-        &nbsp;&nbsp; I was studying Celeste PICO-8 source code, then it was time for Js13kGames. I had to make a platformer, but I had another idea of a puzzle game I wanted to make. So in 4 days, I made a sliding puzzle game with no respect to the theme. So I gave it a name resembling 404, A0A. I quickly submitted and got a few likes and retweets on twitter. This was the first game I used my own made pixel art. Then I started the platformer game. 
-<br>
-&nbsp;&nbsp; This time I wanted to use the theme, so after some brainstorming I ended up using the digits of HTTP status codes to be the collectibles in the game. 24 days was left to deadline, so I made a plan for 20 days. Day 1, draw some placeholder art. Day 2, code the mechanics and so on. I didn't have to ...
+        
+&nbsp;&nbsp;Before the jam started I analyzed Celeste Source Code and researched about it, I wrote a tutorial about the mechanics of a platformer <a href="https://github.com/eguneys/celeste-jumping">here</a>.
+
+Last year, I worked hard on polishing the menu, adding music but I couldn't make it to top 100. So this year I decided to spend more on the gameplay. I had the idea of making a platformer, and used the theme by making the http status codes to be collectibles.
+
+<h3>Plan Ahead</h3>
+
+&nbsp;&nbsp;This year, I started with a 20 day plan, you can see it <a href="https://github.com/eguneys/js2020/blob/master/DRAFT.md#schedule">here</a>. Though I finished in less than 15 days.
+
+I started from scratch, and used my <a href="https://github.com/eguneys/ground">boilerplate starter code using webpack</a>. It supports code minification and live reloading. I spent as less as possible for low level API's such as input events, asset loading, game loop, creating a canvas, and drawing on canvas.
+
+<h3>Keep it Simple </h3>
+
+&nbsp;&nbsp;I decided to not have any text in the game. I had a single 128x128 spritesheet with 8x8 tiles for assets. It took 5kb, which later I figured It could go down to 2.5kbs by using a <a href="https://tinypng.com/">png optimizer</a>. I used the Pico-8 palette with 16 colors.
+
+In the plan, I was to do placeholder art, later replace it with polished art, but I didn't have the skills to make it any better so I kept the polishing to minimum.
+
+For level design, I chose 32x32 tiles for a level, and added total of four levels. The levels were in <a href="https://github.com/eguneys/js2020/blob/master/src/play/levels.js#L1">1D array format</a>, and it took the most inefficient space, more than 11kbs. Next year I will use a custom format to fix that.
+
+<h3>Challenge yourself</h3>
+
+&nbsp;&nbsp;For mechanics, Player had horizontal movement, jumping, and wall sliding. There were falling blocks, bouncy springs, collectibles, and deadly spikes, and the camera. I also added fall damage for the red tiles and placed them on various places.
+I asked about wall jumping on <a href="https://gamedev.stackexchange.com/questions/185382/what-are-the-parameters-for-a-smooth-wall-jump">SO</a> but couldn't really nail it. And the bouncy springs didn't feel good, but it was OK.
+
+<h3>Get social feedback</h3>
+
+&nbsp;&nbsp;I shared my game on social media and got some feedback from /r/gamedev <a href="https://www.reddit.com/r/gamedev/comments/ihzoic/feedback_friday_407_design_input/g34352f?utm_source=share&utm_medium=web2x&context=3">Feedback Friday</a>, and from my twitter post. 
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">12kb on <a href="https://twitter.com/hashtag/js13k?src=hash&amp;ref_src=twsrc%5Etfw">#js13k</a>. Play live at <a href="https://t.co/RmvcSTINx6">https://t.co/RmvcSTINx6</a> <a href="https://t.co/NiTLal08hN">pic.twitter.com/NiTLal08hN</a></p>&mdash; Emre Guneyler (@eguneys) <a href="https://twitter.com/eguneys/status/1299769426644959234?ref_src=twsrc%5Etfw">August 29, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+They said, the movement is too fast, and putting springs underneath the spikes wasn't nice. I slowed the player a bit, but kept the springs there. I figured it wouldn't be no challenging otherwise, the hitboxes were small so you could easily avoid them if you learn the way.
+
+<h3>Decorate and Polish</h3>
+
+&nbsp;&nbsp;One feedback was to add atmosphere. I added decorative decals, background with animation, water drops, grass tiles, and a <a href="https://gamedev.stackexchange.com/questions/185436/spider-physics-to-patrol-on-platform-smoothly-when-changing-direction">spider npc</a>. At first spider was supposed to have attack but I cut it out.
+
+I had no music, but I added sounds using <a href="https://sb.bitsnbites.eu/">Sound box</a>. I played three different notes and played them randomly on water drops, so it created sort of a tune to the game.
+
+I added camera shake and background animation when the player died.
+
+<h3>Make it presentable with User Interface</h3>
+
+&nbsp;&nbsp;I had an intro scene, gameplay, a status scene, and an end scene. Status scene shows the collectibles and stats for death count and time. They were both progress bars so both are compared to author's stats. In the end I added a little coin spinning animation just to show the player something nice for collecting all the collectibles, thus finishing the game.
+
+<h3>Better luck next year</h3>
+
+See the <a href="https://github.com/eguneys/js2020">source code</a>.
+<br/>
+Comment on <a href="">on twitter</a>.
+<br/>
+Support me on <a href="https://www.patreon.com/eguneys">on patreon</a>.
+<br/>
+Have fun, stay safe 💙.
       </article>
     </section>
 
