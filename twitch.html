@@ -7,12 +7,50 @@
   </head>
   <body>
     Meet Emre<br/>
+
+    <div style="display: flex; flex-flow: row;">
 <iframe
   id="chat_embed"
   src="https://www.twitch.tv/embed/gsoutz/chat?parent=eguneys.github.io"
   height="500"
   width="350">
 </iframe>
+<div id="#sub"></div>
+</div>
+<div id='#sub2'></div>
+<div id='#sub3'></div>
+  
+<script>
+
+  function rnd(min, max) {
+      return Math.floor(min + (Math.random() * (max - min)))
+    }
+
+  function image(id) {
+
+       let app = document.getElementById(id)
+
+      let new_image = new Image()
+      new_image.width = rnd(80, 180)
+      new_image.src = 'favicon.ico'
+      new_image.style = `transform: rotate(${rnd(0, 360)}deg);`
+
+      app.appendChild(new_image)
+    }
+
+  function image_n(id, n) {
+      for (let i = 0; i < n; i++) {
+      image(id)
+        }
+    }
+  /* Nvidia Dice rolls */
+  /* https://clips.twitch.tv/TenuousEndearingSalsifyDoubleRainbow-hAxKrsXWLp27vfS7 */
+  window.addEventListener('load', () => {
+      image_n('#sub', 18)
+      image_n('#sub2', 18)
+      image_n('#sub3', 10)
+    })
+</script>
 
   </body>
 </html>
